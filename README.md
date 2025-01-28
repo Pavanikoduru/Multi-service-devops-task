@@ -42,3 +42,19 @@ cd devops-task
 Build and start the application:
 docker-compose up --build
 
+Access the services in the browser:
+Frontend: http://localhost:3000
+Backend: http://localhost:4000
+Python Service: http://localhost:5000
+
+Pushing Docker Images to Docker Hub
+1) Login to Docker Hub: docker login
+2) Tag the images:
+   docker tag multi-service-devops-task_frontend:latest pavanikoduru22/frontend:latest
+   docker tag multi-service-devops-task_backend:latest pavanikoduru22/backend:latest
+   docker tag multi-service-devops-task_python-service:latest pavanikoduru22/python-service:latest
+3) Push the images:
+   docker push pavanikoduru22/frontend:latest
+   docker push pavanikoduru22/backend:latest
+   docker push pavanikoduru22/python-service:latest
+4) Verify the images on Docker Hub: https://hub.docker.com/repositories/pavanikoduru22
