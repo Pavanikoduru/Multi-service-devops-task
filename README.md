@@ -36,7 +36,7 @@ sudo apt install -y git
 
 Step 2: Clone the Project and Run It
 Download the project:
-git clone https://github.com/YourUsername/devops-task.git
+git clone https://github.com/Pavanikoduru/Multi-service-devops-task.git
 cd devops-task
 
 Build and start the application:
